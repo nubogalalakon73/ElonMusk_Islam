@@ -263,7 +263,11 @@ async def ai_chat(payload: ChatRequest):
         reply = str(reply_text).strip()
     except Exception as e:
         logging.exception("AI chat error")
-        raise HTTPException(status_code=500, detail=f"AI error: {e}")
+        # Sanitized Indonesian fallback — do not leak provider internals
+        raise HTTPException(
+            status_code=503,
+            detail="Cermin sedang berembun, pembaca. Coba sebentar lagi.",
+        )
 
     await db.chat_messages.insert_one({
         "session_id": session_id,
