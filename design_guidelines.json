@@ -1,0 +1,139 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury)",
+  "aesthetic": "Premium Interactive Philosophical Ebook Microsite, Cinematic Editorial, Netflix Documentary style, Time Magazine cover feel.",
+  "colors": {
+    "background": {
+      "primary": "#050505",
+      "secondary": "#0A0A0A",
+      "tertiary": "#141414",
+      "paper": "#121110"
+    },
+    "text": {
+      "primary": "#F5F5F0",
+      "secondary": "#A3A3A3",
+      "muted": "#737373"
+    },
+    "accent": {
+      "gold": "#C5A059",
+      "gold_hover": "#D4AF37",
+      "red_dark": "#5C0B0B",
+      "red_glow": "rgba(92, 11, 11, 0.3)"
+    },
+    "border": {
+      "subtle": "rgba(255, 255, 255, 0.1)",
+      "medium": "rgba(255, 255, 255, 0.2)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Bebas Neue",
+      "quote": "Cormorant Garamond",
+      "body": "Manrope"
+    },
+    "hierarchy": {
+      "h1": "font-heading text-6xl md:text-8xl lg:text-[10vw] leading-[0.9] tracking-tight uppercase",
+      "h2": "font-heading text-4xl md:text-6xl lg:text-7xl leading-tight tracking-tight uppercase",
+      "h3": "font-heading text-2xl md:text-4xl tracking-wide uppercase",
+      "quote": "font-quote text-2xl md:text-4xl lg:text-5xl italic leading-relaxed",
+      "body": "font-body text-base md:text-lg leading-relaxed text-secondary",
+      "overline": "font-body text-xs md:text-sm uppercase tracking-[0.2em] text-accent-gold"
+    }
+  },
+  "layout": {
+    "container": "w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24",
+    "section_padding": "py-24 md:py-32 lg:py-48",
+    "grid_system": "Bento grid, asymmetric framing, use heavy negative space. Avoid traditional symmetrical 2-column layouts.",
+    "mobile_first": true
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-accent-gold text-black font-heading uppercase text-xl tracking-widest px-8 py-4 hover:bg-[#F5F5F0] transition-colors duration-300",
+      "secondary": "border border-accent-gold text-accent-gold font-heading uppercase text-xl tracking-widest px-8 py-4 hover:bg-accent-gold hover:text-black transition-colors duration-300",
+      "ghost": "text-primary font-body uppercase text-sm tracking-[0.1em] hover:text-accent-gold transition-colors duration-300"
+    },
+    "cards": {
+      "glass": "bg-black/60 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] p-8",
+      "editorial": "bg-[#0A0A0A] border-l-2 border-accent-red-dark p-8 md:p-12 hover:border-accent-gold transition-colors duration-500",
+      "pricing_gold": "bg-[#0A0A0A] border border-accent-gold shadow-[0_0_40px_rgba(197,160,89,0.1)] p-10 relative overflow-hidden"
+    },
+    "navbar": "fixed top-0 w-full z-50 bg-black/60 backdrop-blur-xl border-b border-white/10 transition-all duration-300",
+    "floating_whatsapp": "fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center",
+    "chat_panel": "glassmorphism container with dark semi-transparent background, thin borders, and monospace/sans-serif AI text inside"
+  },
+  "effects": {
+    "grain_overlay": "Fixed positioned div with pointer-events-none covering the screen, using SVG noise filter, opacity 0.05",
+    "glow": "Radial gradient blobs placed strategically behind sections to add cinematic depth (red or gold)",
+    "parallax": "Use CSS or framer-motion to make images scroll slower than the page text",
+    "transitions": "Smooth fade-ins and slow upward translations for text blocks"
+  },
+  "sections_guide": {
+    "hero": "Fullscreen height, dark cosmic city cover background, Bebas Neue gigantic headline, subtle scrolling chapter titles floating in the background.",
+    "paradoks_anto": "Split-screen layout. Left side: Moon phase/rich context. Right side: eclipse/rain/poor context. Brutalist typography overlay.",
+    "elon_musk_paradox": "Split horizontal or vertical layout comparing Texas prefab house with Mega Mansion. High contrast, luxury editorial layout.",
+    "abdurrahman_bin_auf": "Historical shift. Deep warm lighting, Madinah market background, prominent serif quote.",
+    "ai_reflection_assistant": "Interactive glassmorphism chat interface. AI responds philosophically. Red glow background.",
+    "isi_bab": "Horizontal scrolling carousel of 11 cards. Each card is an 'intellectual archive' with paper texture.",
+    "bab_1_gratis": "Immersive reader mode. Clean, distraction-free, focused on typography. Off-white text on dark paper background.",
+    "pricing": "3 tiers. First tier: Free (minimal). Second tier: Traktir Kopi 10k. Third tier: Full Book 75k (Gold highlighted card).",
+    "marshmallow_effect": "Moody dramatic photography of marshmallow. Focus on delayed gratification narrative.",
+    "testimonials": "Editorial quotes block. Large serif quotation marks, high contrast.",
+    "final_cta": "Fullscreen dark starry sky, glowing horizon. Gigantic CTA button to buy.",
+    "checkout_mock": "Clean, highly secure looking, dark mode payment form with trust badges.",
+    "success_page": "Cinematic thank you page with direct download links, golden accents."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero",
+        "url": "https://customer-assets.emergentagent.com/job_ee09a577-0076-46e2-a9d1-9446a397e5c9/artifacts/jqg0s608_COVER%201_Page_1.png",
+        "description": "Book Cover Artwork"
+      },
+      {
+        "category": "paradoks_anto",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ee09a577-0076-46e2-a9d1-9446a397e5c9/images/7e8f6960c34622a8aefac6f594a6b7c9a858e4b4a5ad85d54117865006661687.png",
+        "description": "Moon phases and rain split-screen"
+      },
+      {
+        "category": "elon_house",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ee09a577-0076-46e2-a9d1-9446a397e5c9/images/fbeac94abf436707da6d38c6d5d58ed14fed72511a54e4c5af8fcd033010db20.png",
+        "description": "Texas prefab vs mansion split"
+      },
+      {
+        "category": "madinah_market",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ee09a577-0076-46e2-a9d1-9446a397e5c9/images/c3d085773bd1033d7ded3738612dd5c28689621194eeb5b93c201c05142c55f0.png",
+        "description": "Ancient middle eastern market"
+      },
+      {
+        "category": "ai_bg",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ee09a577-0076-46e2-a9d1-9446a397e5c9/images/8828d82d5fc7c390ceeb8294dfb4d693040488ea777d19256244df9e177242ef.png",
+        "description": "Dark red cinematic glow background"
+      },
+      {
+        "category": "marshmallow",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ee09a577-0076-46e2-a9d1-9446a397e5c9/images/46a4ed76f365fe06e4b6411aa7ed88aa025e59319239f6fd6f768a6868cf6013.png",
+        "description": "Dramatic marshmallow photography"
+      },
+      {
+        "category": "final_cta_sky",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ee09a577-0076-46e2-a9d1-9446a397e5c9/images/e4869b5b484bd2eec46277eaf193f9e6e1174741fa64e56850d6613daae8fe04.png",
+        "description": "Cinematic night sky"
+      },
+      {
+        "category": "paper_texture",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ee09a577-0076-46e2-a9d1-9446a397e5c9/images/889171b5a34208698d4825810a4613e44cc42bf479689ce70f240dd839c2cd55.png",
+        "description": "Dark vintage paper texture overlay"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Apply 'data-testid' to all interactive elements for testing.",
+    "Do NOT use typical SaaS or generic e-commerce templates. Layouts must feel like a high-end digital editorial.",
+    "Fonts requested: Bebas Neue (heading), Cormorant Garamond (quotes), Manrope (body). Map these in Tailwind config.",
+    "Implement a global fixed grain noise layer on top of the app using a transparent SVG pattern.",
+    "Build a custom sticky navbar and floating WhatsApp component (use lucide-react icons).",
+    "Provide a simulated mock checkout page and a success page inside the App routing (react-router-dom or state-based switching).",
+    "Build the AI Chat Panel section with a mockup chat interface using glassmorphism.",
+    "Include horizontal scroll logic for the 11 Chapters section."
+  ]
+}
