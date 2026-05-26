@@ -45,7 +45,21 @@ export default function FinalCTA() {
           mengejar bayangan.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+        {/* Social proof */}
+        <div className="flex items-center justify-center gap-3 pt-2">
+          <div className="flex -space-x-2">
+            {["R","H","A","N","D","M"].map((l, i) => (
+              <div key={i} className="w-8 h-8 rounded-full bg-bg-secondary/80 border border-white/20 flex items-center justify-center text-[10px] font-heading text-gold">
+                {l}
+              </div>
+            ))}
+          </div>
+          <p className="font-body text-sm text-ink-muted">
+            <span className="text-ink-secondary">1.200+ pembaca</span> sudah ambil full book
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
           <Link to="/checkout" data-testid="final-cta-buy" className="btn-gold !px-10 !py-5 !text-lg">
             📚 Ambil Full Book Rp75.000
           </Link>
@@ -53,6 +67,9 @@ export default function FinalCTA() {
             🤖 Ngobrol dengan AI Reflection
           </a>
         </div>
+        <p className="font-body text-xs text-ink-muted/60 tracking-wider uppercase mt-2">
+          Sekali bayar · Akses selamanya · PDF + EPUB + Flipbook + AI unlimited
+        </p>
       </div>
     </section>
   );
