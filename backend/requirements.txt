@@ -1,5 +1,10 @@
 fastapi
 uvicorn
-google-generativeai
+motor
 pydantic
+pydantic-settings
+email-validator
 python-dotenv
+starlette
+cryptography
+git+https://github.com/emergent-agent/emergentintegrations.git
