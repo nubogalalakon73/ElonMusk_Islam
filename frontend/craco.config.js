@@ -38,8 +38,13 @@ let webpackConfig = {
     },
     configure: (webpackConfig) => {
 
+      // Remove ForkTsCheckerWebpackPlugin — JS-only project, plugin conflicts with Node 20+
+      webpackConfig.plugins = webpackConfig.plugins.filter(
+        (p) => p.constructor && p.constructor.name !== "ForkTsCheckerWebpackPlugin"
+      );
+
       // Add ignored patterns to reduce watched directories
-        webpackConfig.watchOptions = {
+      webpackConfig.watchOptions = {
           ...webpackConfig.watchOptions,
           ignored: [
             '**/node_modules/**',
