@@ -86,8 +86,11 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
   },
-  "overrides": {
+    "overrides": {
     "ajv": "^8.11.0",
     "ajv-keywords": "^5.1.0"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
