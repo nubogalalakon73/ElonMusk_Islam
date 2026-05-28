@@ -7,4 +7,3 @@ email-validator
 python-dotenv
 starlette
 cryptography
-git+https://github.com/emergent-agent/emergentintegrations.git
