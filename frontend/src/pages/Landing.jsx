@@ -12,8 +12,8 @@ import Marshmallow from "@/components/Marshmallow";
 import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
-import FloatingWA from "@/components/FloatingWA";
 import { track } from "@/lib/api";
+import FloatingAI from "@/components/FloatingAI";
 
 export default function Landing() {
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function Landing() {
       <Testimonials />
       <FinalCTA />
       <Footer />
-      <FloatingWA />
+      <FloatingAI />
     </main>
   );
 }
