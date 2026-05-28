@@ -5,6 +5,11 @@ import axios from "axios";
 import { greeting, intentOf, respond, INITIAL_QUICK_REPLIES } from "@/lib/chatBot";
 import { API, track } from "@/lib/api";
 
+const FAST_INTENTS = new Set([
+  "bab1", "open-bab1", "harga", "beli", "wa", "elon", "islam",
+  "tentang", "menu", "salam", "terimakasih", "download-error", "download-wa",
+]);
+
 export default function FloatingAI() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([]);
@@ -73,12 +78,7 @@ export default function FloatingAI() {
     }
   }, [sessionId]);
 
-  const FAST_INTENTS = new Set([
-    "bab1", "open-bab1", "harga", "beli", "wa", "elon", "islam",
-    "tentang", "menu", "salam", "terimakasih", "download-error", "download-wa",
-  ]);
-
-  const userSay = useCallback((text) => {
+   const userSay = useCallback((text) => {
     if (!text.trim()) return;
     const newMsg = { role: "user", text };
     const newMessages = [...messages, newMsg];
